@@ -26,17 +26,19 @@ The only question that matters is whether the *values* are right.
 - **Test set:** 15 held‑out contracts (deterministic, seed 42), 1,380 field cells.
 - **Two metrics:**
   - **Accuracy** — per‑field exact match against the canonical gold (1,380 cells).
-  - **Hallucination rate** — of the cells where the contract has *no* answer
-    (gold = `null`), the fraction where the model committed a value anyway. This
-    is the number that schema validation can never catch.
+  - **Hallucination rate** — of the **110** cells (out of the 1,380) where the
+    contract has *no* answer (gold = `null`), the fraction where the model
+    committed a value anyway. Note the denominator: this rate is over those 110
+    null cells only, not the full 1,380. It's the number schema validation can
+    never catch.
 
 ## Standings
 
-| Stage | Model | What changed | Accuracy | Hallucination | Status |
+| Stage | Model | What changed | Accuracy (of 1,380) | Hallucination (of 110 null) | Status |
 |-------|-------|--------------|---------:|--------------:|:------:|
-| **E0a** | GPT‑5.5 | whole contract, strict schema | **90.7%** | 33.6% | ✅ |
-| **E0partial** | GPT‑5.5 | ~20K‑token chunks + algorithmic merge | **90.0%** | 15.5% | ✅ |
-| **E1** | Qwen 2.5 32B | **swap to an open model — same prompt** | **30.6%** | **54.5%** | ✅ |
+| **E0a** | GPT‑5.5 | whole contract, strict schema | **90.7%** (1,251) | 33.6% (37) | ✅ |
+| **E0partial** | GPT‑5.5 | ~20K‑token chunks + algorithmic merge | **90.0%** (1,242) | 15.5% (17) | ✅ |
+| **E1** | Qwen 2.5 32B | **swap to an open model — same prompt** | **30.6%** (422) | **54.5%** (60) | ✅ |
 | **E2** | Qwen 2.5 32B + LoRA | standard fine‑tuning | … | … | 🔄 running |
 | **E2a** | Qwen 2.5 32B + LoRA | fine‑tune with abstention relabeling (PCL) | … | … | ⏳ |
 | **E3** | Qwen 2.5 32B + VocabMask LoRA | a commercial method (results only) | … | … | ⏳ |

@@ -1,53 +1,57 @@
 # Reddit posts
 
 Verbatim copies of the r/LLMDevs posts, newest first. The repo is the source of
-truth; the posts link back here. Every post opens with the one-line Rule-5
-disclosure below (commercial tie + nothing gated), per the sub's
-self-promotion policy and mod approval.
+truth; the posts link back here.
 
 ---
 
 ## Post 1 — kickoff (E0 / E0partial / E1)
 
 **Title:**
-> Valid JSON: Wrong Answer: Building an LLM to JSON system in public on hard data, might fail.
+> Valid JSON, Wrong Answer: Qwen2.5‑32B gave me 100% schema‑valid JSON and ~70% wrong answers on a hard extraction task. Building the fix in public, might fail.
 
 **Body:**
 
-*Disclosure (Rule 5): `valjson` is MIT‑licensed and free — no paid tier, no
-locked features. I also run a consultancy for the hard cases, and this series'
-final stage uses a method I publish results‑but‑not‑code for. Other than that, nothing in this
-post or the linked repo is gated; every number is reproducible from the
-committed files with `numpy` alone. Posted with mod approval.*
+I keep seeing comments "just enforce a JSON schema and you're done" for structured extraction. 
 
-I keep seeing "just enforce a JSON schema and you're done" for structured
-extraction. So I tried to break it on a task where being wrong actually matters,
-and I'm going to run the whole thing in public — including the parts that fail. 
+1. If you are truly "localLlama-ing", i.e., rolling your own LM or fine tuning, the solution is trivial--slap a schema constrained decoder like llguidance on it and you are done--with the easy part....
 
-Getting high quality JSON is a huge amount of work, I'd guess 10 to 100 times the effort of slapping a prompt on the front and hoping for the best. But if your use-case requires it, and for the love of humanity be honest about it, then perhaps this series will be of value even if I fail. 
+2. Hosted LLMs have similar mechanisms but this is r/LocalLLaMA, so I'll ignore them. 
+
+3. But what about the semantics of all that JSON? Not so easy. 
+
+I wrote a paper about this: https://doi.org/10.5281/zenodo.20075999, open source, lots of mitigations and approaches covered, but I wanted to run a hard dataset in public and I may well fail--in fact already have a bit. 
+ 
+*Disclosure: I use the `valjson` PyPI package, it is MIT‑licensed and free — no paid tier, no locked features. I also run a consultancy for the hard cases, and this series' final stage uses a method I publish results‑but‑not‑code for. Other than that, nothing in this post or the linked repo is gated; every number is reproducible from the committed files.*
 
 **The task.** Extract 92 deal‑point fields from real M&A merger agreements
-(the [MAUD](https://www.atticusprojectai.org/maud) dataset) into one JSON object
-per contract. Strict JSON Schema enforced at decode time, so *every* output is
-schema‑valid by construction. Each field must be `null` when the contract
-doesn't address it. 15 held‑out contracts, 1,380 field cells. Two numbers I
+(the [MAUD](https://www.atticusprojectai.org/maud) dataset) into one JSON object per contract. Strict JSON Schema enforced at decode time, so *every* output is schema‑valid by construction. Each field must be `null` when the contract
+doesn't address it. This is some of the highest quality annotation I have ever encountered in my 30 years--it had to cost a fortune since it was done by lawyers. 
+
+**The butt-clench.** Have a looksie at the X/Twitter acquisition filing (https://www.sec.gov/Archives/edgar/data/1418091/000119312522120461/d310843dex21.htm)--not in MAUD but same format. We will be attempting to extract the following JSON schema (https://github.com/validjson/MAUD/blob/main/data/combined/schema.json). Note that I have made this problem realistic, and way harder, than the standard published MAUD results by mapping from entire contracts to JSON instead of classifying excerpts from the contracts as done in the source .csv annotations (https://github.com/TheAtticusProject/maud/blob/main/data.zip).
+
+**Evaluation.** 15 held‑out contracts, 1,380 field cells. Two numbers I
 care about: per‑field accuracy, and **hallucination rate** = of the cells where
 the contract has no answer, how often the model commits one anyway. That second
-number is the one schema validation can never see.
+number is the one schema validation can never see. 
 
-**Baselines (GPT‑5.5).** Whole contract → 90.7% accuracy. Chunk the contract
-into ~20K‑token windows and merge the per‑chunk JSON → 90.0%, and chunking cuts
-hallucination from 33.6% to 15.5%. Fine, schema + a strong closed model gets you
-~90%. This suprised me a lot becuase this looks like a very hard task, but see below for possible pollution in training epoch. 
+**Baselines (GPT‑5.5).** Whole contract → **90.7%** accuracy (1,251 / 1,380
+fields). Chunking into ~20K‑token windows and merging the per‑chunk JSON holds
+accuracy at **90.0%** (1,242 / 1,380). Hallucination is a separate, narrower
+number — measured *only* on the **110** cells the contract leaves blank
+(gold = `null`, out of the 1,380): the whole‑contract model invents an answer
+for **37 / 110 (33.6%)** of them, and chunking drops that to **17 / 110
+(15.5%)**. Ok, a schema + a strong closed model gets you
+~90%. That surprised me because this looks like a very hard task — but see the contamination caveat below before you trust it. 
 
 **Then I swapped in an open model (Qwen 2.5 32B), same prompt, same chunks,
 same everything.** I pre‑registered a guess first: ~80–85% accuracy, similar
 hallucination. I was wrong by a lot:
 
-| | accuracy | hallucination | valid JSON |
+| | accuracy (of 1,380 fields) | hallucination (of 110 null cells) | valid JSON |
 |---|---:|---:|---:|
-| GPT‑5.5 (chunked) | 90.0% | 15.5% | 100% |
-| Qwen 2.5 32B (same prompt) | **30.6%** | **54.5%** | **100%** |
+| GPT‑5.5 (chunked) | 90.0% (1,242) | 15.5% (17) | 100% |
+| Qwen 2.5 32B (same prompt) | **30.6% (422)** | **54.5% (60)** | **100%** |
 
 100% schema‑valid. ~70% wrong. Not random, either — here's the mechanism:
 
@@ -80,8 +84,7 @@ Each might fail. I'll post results as they land — repo here:
 **https://github.com/validjson/MAUD**
 
 A live scoreboard, the harness for the open stages so far (E0–E1), and the raw
-prediction/gold files — you can recompute every number yourself with just
-`numpy`, no model or API (see `REPRODUCE.md`).
+prediction/gold files — you can recompute every number yourself, no model or API (see `REPRODUCE.md`) but E2 and beyond will require a model + GPU.
 
 Predictions, criticism, and "you're doing it wrong" are welcome — especially
 if you think the prompt is the problem (I deliberately kept it identical across
