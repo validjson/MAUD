@@ -1,0 +1,17 @@
+This repository includes data derived from the MAUD dataset (Merger Agreement
+Understanding Dataset) by The Atticus Project, licensed under CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/).
+
+  Source: https://www.atticusprojectai.org/maud
+
+Specifically:
+  - data/training/chunked/e0partial_sample.jsonl contains excerpts of
+    merger-agreement text from MAUD.
+  - The gold annotations under reports/*/gold*.jsonl and merged_gold.jsonl are
+    derived from MAUD's labels.
+
+Two upstream contracts (contract_88, contract_149) were corrected against their
+EDGAR source filings before use.
+
+Code in this repository is MIT-licensed (see LICENSE). The MAUD-derived data
+retains its CC BY 4.0 license and attribution requirement.

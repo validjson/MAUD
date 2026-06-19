@@ -1,0 +1,13 @@
+# Level 1 — recompute the committed results (analysers).  This is all you need
+# to verify every number in the README.
+numpy>=1.24
+
+# Level 2 — re-run the GPT-5.5 stages (E0a, E0partial) yourself.  Needs your own
+# OPENAI_API_KEY and spends real money.
+openai>=1.40
+
+# Level 3 — re-run the open-weights stage (E1) yourself additionally needs a GPU
+# and:  torch  transformers  llguidance
+# We use a standard llguidance JSON-Schema grammar over Qwen 2.5 32B Instruct.
+# See REPRODUCE.md for the exact model / params; the production decoder itself is
+# our commercial stack and is not shipped (E1 uses none of its proprietary parts).

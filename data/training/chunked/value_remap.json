@@ -1,0 +1,68 @@
+{
+  "absence_of_litigation_closing_condition_pending_v_threatened_v_threatened_in_writing_answer": {
+    "Pending or threatened (without \"writing\" requirement)": "Pending or threatened (without 'writing' requirement)"
+  },
+  "fls_mae_standard_answer": {
+    "\"Could\" (reasonably) be expected to": "'Could' (reasonably) be expected to",
+    "\"Would\"": "'Would'",
+    "\"Would\" (reasonably) be expected to": "'Would' (reasonably) be expected to"
+  },
+  "mae_applies_to_target_and_subsidiaries_mae_answer": {
+    "Applies to Target and subsidiaries \"taken as a whole\"": "Applies to Target and subsidiaries 'taken as a whole'"
+  },
+  "wnaf_applies_to_answer": {
+    "\"act of God\"": "'act of God'"
+  },
+  "wnaf_subject_to_disproportionate_impact_answer": {
+    "\"act of God\"": "'act of God'"
+  },
+  "relational_language_mae_carveout_answer_dropdown": {
+    "\"Arising from/out of\"": "'Arising from/out of'",
+    "\"Attributable to\"": "'Attributable to'",
+    "\"Relating to\"": "'Relating to'",
+    "\"Resulting from\"": "'Resulting from'"
+  },
+  "fiduciary_exception_board_determination_standard_answer_no_shop": {
+    "\"Breach\" of fiduciary duties": "'Breach' of fiduciary duties",
+    "\"Inconsistent\" with fiduciary duties": "'Inconsistent' with fiduciary duties",
+    "\"Reasonably likely/expected breach\" of fiduciary duties": "'Reasonably likely/expected breach' of fiduciary duties",
+    "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties": "'Reasonably likely/expected to be inconsistent' with fiduciary duties",
+    "\"Reasonably likely/expected violation\" of fiduciary duties": "'Reasonably likely/expected violation' of fiduciary duties",
+    "\"Required to comply\" with fiduciary duties": "'Required to comply' with fiduciary duties",
+    "\"Violation\" of fiduciary duties": "'Violation' of fiduciary duties"
+  },
+  "cor_standard_board_determination_only_answer": {
+    "\"Reasonably likely/expected breach\" of fiduciary duties": "'Reasonably likely/expected breach' of fiduciary duties",
+    "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties": "'Reasonably likely/expected to be inconsistent' with fiduciary duties"
+  },
+  "cor_standard_superior_offer": {
+    "\"Breach\" of fiduciary duties": "'Breach' of fiduciary duties",
+    "\"Inconsistent\" with fiduciary duties": "'Inconsistent' with fiduciary duties",
+    "\"Reasonably likely/expected breach\" of fiduciary duties": "'Reasonably likely/expected breach' of fiduciary duties",
+    "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties": "'Reasonably likely/expected to be inconsistent' with fiduciary duties",
+    "\"Reasonably likely/expected violation\" of fiduciary duties": "'Reasonably likely/expected violation' of fiduciary duties",
+    "\"Required to comply\" with fiduciary duties": "'Required to comply' with fiduciary duties",
+    "\"Violation\" of fiduciary duties": "'Violation' of fiduciary duties"
+  },
+  "cor_standard_intervening_event": {
+    "\"Breach\" of fiduciary duties": "'Breach' of fiduciary duties",
+    "\"Inconsistent\" with fiduciary duties": "'Inconsistent' with fiduciary duties",
+    "\"Reasonably likely/expected breach\" of fiduciary duties": "'Reasonably likely/expected breach' of fiduciary duties",
+    "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties": "'Reasonably likely/expected to be inconsistent' with fiduciary duties",
+    "\"Reasonably likely/expected violation\" of fiduciary duties": "'Reasonably likely/expected violation' of fiduciary duties",
+    "\"Required to comply\" with fiduciary duties": "'Required to comply' with fiduciary duties",
+    "\"Violation\" of fiduciary duties": "'Violation' of fiduciary duties"
+  },
+  "definition_includes_stock_deals_answer": {
+    "\"All or substantially all\"": "'All or substantially all'",
+    "Greater than 50% but not \"all or substantially all\"": "Greater than 50% but not 'all or substantially all'"
+  },
+  "definition_includes_asset_deals_answer": {
+    "\"All or substantially all\"": "'All or substantially all'",
+    "Greater than 50% but not \"all or substantially all\"": "Greater than 50% but not 'all or substantially all'"
+  },
+  "specific_performance_answer": {
+    "\"entitled to seek\" specific performance": "'entitled to seek' specific performance",
+    "\"entitled to\" specific performance": "'entitled to' specific performance"
+  }
+}

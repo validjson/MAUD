@@ -1,0 +1,1790 @@
+[
+  {
+    "label": "contract_103/chunk0",
+    "attempts": 1,
+    "duration_s": 18.47,
+    "usage": {
+      "input_tokens": 23308,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1517,
+      "output_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "total_tokens": 24825
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_103/chunk1",
+    "attempts": 1,
+    "duration_s": 19.81,
+    "usage": {
+      "input_tokens": 23368,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1733,
+      "output_tokens_details": {
+        "reasoning_tokens": 405
+      },
+      "total_tokens": 25101
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_103/chunk2",
+    "attempts": 1,
+    "duration_s": 53.76,
+    "usage": {
+      "input_tokens": 22613,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3515,
+      "output_tokens_details": {
+        "reasoning_tokens": 2057
+      },
+      "total_tokens": 26128
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_103/chunk3",
+    "attempts": 1,
+    "duration_s": 63.24,
+    "usage": {
+      "input_tokens": 23723,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3853,
+      "output_tokens_details": {
+        "reasoning_tokens": 2450
+      },
+      "total_tokens": 27576
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_103/chunk4",
+    "attempts": 1,
+    "duration_s": 63.28,
+    "usage": {
+      "input_tokens": 15305,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3994,
+      "output_tokens_details": {
+        "reasoning_tokens": 2588
+      },
+      "total_tokens": 19299
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_104/chunk0",
+    "attempts": 1,
+    "duration_s": 17.13,
+    "usage": {
+      "input_tokens": 23856,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1492,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 25348
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_104/chunk1",
+    "attempts": 1,
+    "duration_s": 42.06,
+    "usage": {
+      "input_tokens": 23264,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2750,
+      "output_tokens_details": {
+        "reasoning_tokens": 1387
+      },
+      "total_tokens": 26014
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_104/chunk2",
+    "attempts": 1,
+    "duration_s": 64.63,
+    "usage": {
+      "input_tokens": 21473,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 3516,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 24989
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_104/chunk3",
+    "attempts": 1,
+    "duration_s": 74.85,
+    "usage": {
+      "input_tokens": 22256,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4402,
+      "output_tokens_details": {
+        "reasoning_tokens": 2906
+      },
+      "total_tokens": 26658
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_104/chunk4",
+    "attempts": 1,
+    "duration_s": 14.14,
+    "usage": {
+      "input_tokens": 9686,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1418,
+      "output_tokens_details": {
+        "reasoning_tokens": 85
+      },
+      "total_tokens": 11104
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_105/chunk0",
+    "attempts": 1,
+    "duration_s": 61.37,
+    "usage": {
+      "input_tokens": 23609,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3919,
+      "output_tokens_details": {
+        "reasoning_tokens": 2498
+      },
+      "total_tokens": 27528
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_105/chunk1",
+    "attempts": 1,
+    "duration_s": 16.7,
+    "usage": {
+      "input_tokens": 22035,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1536,
+      "output_tokens_details": {
+        "reasoning_tokens": 205
+      },
+      "total_tokens": 23571
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_105/chunk2",
+    "attempts": 1,
+    "duration_s": 22.09,
+    "usage": {
+      "input_tokens": 22645,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1772,
+      "output_tokens_details": {
+        "reasoning_tokens": 444
+      },
+      "total_tokens": 24417
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_105/chunk3",
+    "attempts": 1,
+    "duration_s": 26.49,
+    "usage": {
+      "input_tokens": 23243,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2079,
+      "output_tokens_details": {
+        "reasoning_tokens": 720
+      },
+      "total_tokens": 25322
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_105/chunk4",
+    "attempts": 1,
+    "duration_s": 58.74,
+    "usage": {
+      "input_tokens": 22537,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3393,
+      "output_tokens_details": {
+        "reasoning_tokens": 2022
+      },
+      "total_tokens": 25930
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_105/chunk5",
+    "attempts": 1,
+    "duration_s": 68.05,
+    "usage": {
+      "input_tokens": 23474,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4008,
+      "output_tokens_details": {
+        "reasoning_tokens": 2588
+      },
+      "total_tokens": 27482
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_105/chunk6",
+    "attempts": 1,
+    "duration_s": 15.64,
+    "usage": {
+      "input_tokens": 12564,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1508,
+      "output_tokens_details": {
+        "reasoning_tokens": 175
+      },
+      "total_tokens": 14072
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 6
+  },
+  {
+    "label": "contract_118/chunk0",
+    "attempts": 1,
+    "duration_s": 19.99,
+    "usage": {
+      "input_tokens": 23084,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1609,
+      "output_tokens_details": {
+        "reasoning_tokens": 280
+      },
+      "total_tokens": 24693
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_118/chunk1",
+    "attempts": 1,
+    "duration_s": 21.99,
+    "usage": {
+      "input_tokens": 23209,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1730,
+      "output_tokens_details": {
+        "reasoning_tokens": 402
+      },
+      "total_tokens": 24939
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_118/chunk2",
+    "attempts": 1,
+    "duration_s": 40.8,
+    "usage": {
+      "input_tokens": 22792,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2704,
+      "output_tokens_details": {
+        "reasoning_tokens": 1342
+      },
+      "total_tokens": 25496
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_118/chunk3",
+    "attempts": 1,
+    "duration_s": 66.41,
+    "usage": {
+      "input_tokens": 22073,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4069,
+      "output_tokens_details": {
+        "reasoning_tokens": 2659
+      },
+      "total_tokens": 26142
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_118/chunk4",
+    "attempts": 1,
+    "duration_s": 77.99,
+    "usage": {
+      "input_tokens": 24439,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4563,
+      "output_tokens_details": {
+        "reasoning_tokens": 3098
+      },
+      "total_tokens": 29002
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_118/chunk5",
+    "attempts": 1,
+    "duration_s": 17.92,
+    "usage": {
+      "input_tokens": 20103,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1512,
+      "output_tokens_details": {
+        "reasoning_tokens": 184
+      },
+      "total_tokens": 21615
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_119/chunk0",
+    "attempts": 1,
+    "duration_s": 53.11,
+    "usage": {
+      "input_tokens": 23925,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3457,
+      "output_tokens_details": {
+        "reasoning_tokens": 2058
+      },
+      "total_tokens": 27382
+    },
+    "error": null,
+    "contract_name": "contract_119",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_119/chunk1",
+    "attempts": 1,
+    "duration_s": 57.82,
+    "usage": {
+      "input_tokens": 22318,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3782,
+      "output_tokens_details": {
+        "reasoning_tokens": 2324
+      },
+      "total_tokens": 26100
+    },
+    "error": null,
+    "contract_name": "contract_119",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_119/chunk2",
+    "attempts": 1,
+    "duration_s": 57.8,
+    "usage": {
+      "input_tokens": 18412,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3675,
+      "output_tokens_details": {
+        "reasoning_tokens": 2224
+      },
+      "total_tokens": 22087
+    },
+    "error": null,
+    "contract_name": "contract_119",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_121/chunk0",
+    "attempts": 1,
+    "duration_s": 37.31,
+    "usage": {
+      "input_tokens": 23880,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2726,
+      "output_tokens_details": {
+        "reasoning_tokens": 1311
+      },
+      "total_tokens": 26606
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_121/chunk1",
+    "attempts": 1,
+    "duration_s": 24.54,
+    "usage": {
+      "input_tokens": 21971,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1845,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 23816
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_121/chunk2",
+    "attempts": 1,
+    "duration_s": 23.15,
+    "usage": {
+      "input_tokens": 22812,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1844,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 24656
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_121/chunk3",
+    "attempts": 1,
+    "duration_s": 30.48,
+    "usage": {
+      "input_tokens": 22512,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2258,
+      "output_tokens_details": {
+        "reasoning_tokens": 899
+      },
+      "total_tokens": 24770
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_121/chunk4",
+    "attempts": 1,
+    "duration_s": 42.86,
+    "usage": {
+      "input_tokens": 23026,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2808,
+      "output_tokens_details": {
+        "reasoning_tokens": 1426
+      },
+      "total_tokens": 25834
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_121/chunk5",
+    "attempts": 1,
+    "duration_s": 58.97,
+    "usage": {
+      "input_tokens": 22707,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3561,
+      "output_tokens_details": {
+        "reasoning_tokens": 2166
+      },
+      "total_tokens": 26268
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_121/chunk6",
+    "attempts": 1,
+    "duration_s": 47.12,
+    "usage": {
+      "input_tokens": 16536,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3054,
+      "output_tokens_details": {
+        "reasoning_tokens": 1692
+      },
+      "total_tokens": 19590
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 6
+  },
+  {
+    "label": "contract_123/chunk0",
+    "attempts": 1,
+    "duration_s": 17.84,
+    "usage": {
+      "input_tokens": 22823,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1595,
+      "output_tokens_details": {
+        "reasoning_tokens": 266
+      },
+      "total_tokens": 24418
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_123/chunk1",
+    "attempts": 1,
+    "duration_s": 18.96,
+    "usage": {
+      "input_tokens": 23278,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1635,
+      "output_tokens_details": {
+        "reasoning_tokens": 307
+      },
+      "total_tokens": 24913
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_123/chunk2",
+    "attempts": 1,
+    "duration_s": 53.48,
+    "usage": {
+      "input_tokens": 21584,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3532,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 25116
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_123/chunk3",
+    "attempts": 1,
+    "duration_s": 75.57,
+    "usage": {
+      "input_tokens": 22712,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4616,
+      "output_tokens_details": {
+        "reasoning_tokens": 3178
+      },
+      "total_tokens": 27328
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_123/chunk4",
+    "attempts": 1,
+    "duration_s": 33.48,
+    "usage": {
+      "input_tokens": 22228,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2373,
+      "output_tokens_details": {
+        "reasoning_tokens": 1004
+      },
+      "total_tokens": 24601
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_123/chunk5",
+    "attempts": 1,
+    "duration_s": 36.16,
+    "usage": {
+      "input_tokens": 9218,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2420,
+      "output_tokens_details": {
+        "reasoning_tokens": 1034
+      },
+      "total_tokens": 11638
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_13/chunk0",
+    "attempts": 1,
+    "duration_s": 43.07,
+    "usage": {
+      "input_tokens": 23599,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2951,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 26550
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_13/chunk1",
+    "attempts": 1,
+    "duration_s": 18.85,
+    "usage": {
+      "input_tokens": 22604,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1656,
+      "output_tokens_details": {
+        "reasoning_tokens": 328
+      },
+      "total_tokens": 24260
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_13/chunk2",
+    "attempts": 1,
+    "duration_s": 54.58,
+    "usage": {
+      "input_tokens": 23043,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3517,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 26560
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_13/chunk3",
+    "attempts": 1,
+    "duration_s": 50.64,
+    "usage": {
+      "input_tokens": 21804,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3343,
+      "output_tokens_details": {
+        "reasoning_tokens": 1967
+      },
+      "total_tokens": 25147
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_13/chunk4",
+    "attempts": 1,
+    "duration_s": 66.05,
+    "usage": {
+      "input_tokens": 18868,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3618,
+      "output_tokens_details": {
+        "reasoning_tokens": 2220
+      },
+      "total_tokens": 22486
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_148/chunk0",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_148",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_148/chunk1",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_148",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_148/chunk2",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_148",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_148/chunk3",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_148",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_148/chunk4",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_148",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_15/chunk0",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_15",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_15/chunk1",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_15",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_15/chunk2",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_15",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_15/chunk3",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_15",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_15/chunk4",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_15",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_18/chunk0",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_18",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_18/chunk1",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_18",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_18/chunk2",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_18",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_18/chunk3",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_18",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_18/chunk4",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_18",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_25/chunk0",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_25",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_25/chunk1",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_25",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_25/chunk2",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_25",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_25/chunk3",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_25",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_25/chunk4",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_25",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_6/chunk0",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_6",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_6/chunk1",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_6",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_6/chunk2",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_6",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_88/chunk0",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_88",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_88/chunk1",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_88",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_88/chunk2",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_88",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_88/chunk3",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_88",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_88/chunk4",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_88",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_88/chunk5",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_88",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_99/chunk0",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_99",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_99/chunk1",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_99",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_99/chunk2",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_99",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_99/chunk3",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_99",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_99/chunk4",
+    "attempts": 3,
+    "duration_s": null,
+    "usage": null,
+    "error": "RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+    "contract_name": "contract_99",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_148/chunk0",
+    "attempts": 1,
+    "duration_s": 17.82,
+    "usage": {
+      "input_tokens": 23636,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1494,
+      "output_tokens_details": {
+        "reasoning_tokens": 163
+      },
+      "total_tokens": 25130
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_148/chunk1",
+    "attempts": 1,
+    "duration_s": 20.03,
+    "usage": {
+      "input_tokens": 23505,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1635,
+      "output_tokens_details": {
+        "reasoning_tokens": 307
+      },
+      "total_tokens": 25140
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_148/chunk2",
+    "attempts": 1,
+    "duration_s": 33.45,
+    "usage": {
+      "input_tokens": 22595,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2355,
+      "output_tokens_details": {
+        "reasoning_tokens": 993
+      },
+      "total_tokens": 24950
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_148/chunk3",
+    "attempts": 1,
+    "duration_s": 76.48,
+    "usage": {
+      "input_tokens": 21850,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4738,
+      "output_tokens_details": {
+        "reasoning_tokens": 3274
+      },
+      "total_tokens": 26588
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_148/chunk4",
+    "attempts": 1,
+    "duration_s": 60.79,
+    "usage": {
+      "input_tokens": 18063,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4012,
+      "output_tokens_details": {
+        "reasoning_tokens": 2588
+      },
+      "total_tokens": 22075
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_15/chunk0",
+    "attempts": 1,
+    "duration_s": 18.52,
+    "usage": {
+      "input_tokens": 24016,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1510,
+      "output_tokens_details": {
+        "reasoning_tokens": 181
+      },
+      "total_tokens": 25526
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_15/chunk1",
+    "attempts": 1,
+    "duration_s": 21.16,
+    "usage": {
+      "input_tokens": 23773,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1799,
+      "output_tokens_details": {
+        "reasoning_tokens": 471
+      },
+      "total_tokens": 25572
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_15/chunk2",
+    "attempts": 1,
+    "duration_s": 73.11,
+    "usage": {
+      "input_tokens": 22644,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4284,
+      "output_tokens_details": {
+        "reasoning_tokens": 2885
+      },
+      "total_tokens": 26928
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_15/chunk3",
+    "attempts": 1,
+    "duration_s": 100.45,
+    "usage": {
+      "input_tokens": 23782,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 6105,
+      "output_tokens_details": {
+        "reasoning_tokens": 4632
+      },
+      "total_tokens": 29887
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_15/chunk4",
+    "attempts": 1,
+    "duration_s": 37.1,
+    "usage": {
+      "input_tokens": 10350,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2626,
+      "output_tokens_details": {
+        "reasoning_tokens": 1292
+      },
+      "total_tokens": 12976
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_18/chunk0",
+    "attempts": 1,
+    "duration_s": 53.39,
+    "usage": {
+      "input_tokens": 23335,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3394,
+      "output_tokens_details": {
+        "reasoning_tokens": 1993
+      },
+      "total_tokens": 26729
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_18/chunk1",
+    "attempts": 1,
+    "duration_s": 23.56,
+    "usage": {
+      "input_tokens": 22918,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1844,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 24762
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_18/chunk2",
+    "attempts": 1,
+    "duration_s": 39.31,
+    "usage": {
+      "input_tokens": 22980,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2621,
+      "output_tokens_details": {
+        "reasoning_tokens": 1256
+      },
+      "total_tokens": 25601
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_18/chunk3",
+    "attempts": 1,
+    "duration_s": 80.23,
+    "usage": {
+      "input_tokens": 23559,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4732,
+      "output_tokens_details": {
+        "reasoning_tokens": 3282
+      },
+      "total_tokens": 28291
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_18/chunk4",
+    "attempts": 1,
+    "duration_s": 14.31,
+    "usage": {
+      "input_tokens": 10565,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1481,
+      "output_tokens_details": {
+        "reasoning_tokens": 148
+      },
+      "total_tokens": 12046
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_25/chunk0",
+    "attempts": 1,
+    "duration_s": 18.05,
+    "usage": {
+      "input_tokens": 23171,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1596,
+      "output_tokens_details": {
+        "reasoning_tokens": 267
+      },
+      "total_tokens": 24767
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_25/chunk1",
+    "attempts": 1,
+    "duration_s": 28.09,
+    "usage": {
+      "input_tokens": 22248,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2052,
+      "output_tokens_details": {
+        "reasoning_tokens": 693
+      },
+      "total_tokens": 24300
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_25/chunk2",
+    "attempts": 1,
+    "duration_s": 73.01,
+    "usage": {
+      "input_tokens": 21835,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4551,
+      "output_tokens_details": {
+        "reasoning_tokens": 3057
+      },
+      "total_tokens": 26386
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_25/chunk3",
+    "attempts": 1,
+    "duration_s": 89.42,
+    "usage": {
+      "input_tokens": 23172,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 5229,
+      "output_tokens_details": {
+        "reasoning_tokens": 3810
+      },
+      "total_tokens": 28401
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_25/chunk4",
+    "attempts": 1,
+    "duration_s": 18.6,
+    "usage": {
+      "input_tokens": 10550,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1521,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 12071
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_6/chunk0",
+    "attempts": 1,
+    "duration_s": 63.24,
+    "usage": {
+      "input_tokens": 24413,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3950,
+      "output_tokens_details": {
+        "reasoning_tokens": 2569
+      },
+      "total_tokens": 28363
+    },
+    "error": null,
+    "contract_name": "contract_6",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_6/chunk1",
+    "attempts": 1,
+    "duration_s": 76.85,
+    "usage": {
+      "input_tokens": 23507,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4428,
+      "output_tokens_details": {
+        "reasoning_tokens": 3048
+      },
+      "total_tokens": 27935
+    },
+    "error": null,
+    "contract_name": "contract_6",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_6/chunk2",
+    "attempts": 1,
+    "duration_s": 90.78,
+    "usage": {
+      "input_tokens": 20461,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 5564,
+      "output_tokens_details": {
+        "reasoning_tokens": 4125
+      },
+      "total_tokens": 26025
+    },
+    "error": null,
+    "contract_name": "contract_6",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_88/chunk0",
+    "attempts": 1,
+    "duration_s": 16.11,
+    "usage": {
+      "input_tokens": 19690,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1516,
+      "output_tokens_details": {
+        "reasoning_tokens": 187
+      },
+      "total_tokens": 21206
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_88/chunk1",
+    "attempts": 1,
+    "duration_s": 14.71,
+    "usage": {
+      "input_tokens": 21311,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1478,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 22789
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_88/chunk2",
+    "attempts": 1,
+    "duration_s": 50.78,
+    "usage": {
+      "input_tokens": 21105,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3520,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 24625
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_88/chunk3",
+    "attempts": 1,
+    "duration_s": 40.85,
+    "usage": {
+      "input_tokens": 21538,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2916,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 24454
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_88/chunk4",
+    "attempts": 1,
+    "duration_s": 47.11,
+    "usage": {
+      "input_tokens": 21075,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3535,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 24610
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_88/chunk5",
+    "attempts": 1,
+    "duration_s": 27.48,
+    "usage": {
+      "input_tokens": 14718,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 2185,
+      "output_tokens_details": {
+        "reasoning_tokens": 851
+      },
+      "total_tokens": 16903
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_99/chunk0",
+    "attempts": 1,
+    "duration_s": 15.12,
+    "usage": {
+      "input_tokens": 23752,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1519,
+      "output_tokens_details": {
+        "reasoning_tokens": 190
+      },
+      "total_tokens": 25271
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_99/chunk1",
+    "attempts": 1,
+    "duration_s": 21.27,
+    "usage": {
+      "input_tokens": 22894,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 1769,
+      "output_tokens_details": {
+        "reasoning_tokens": 441
+      },
+      "total_tokens": 24663
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_99/chunk2",
+    "attempts": 1,
+    "duration_s": 48.42,
+    "usage": {
+      "input_tokens": 22742,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 3487,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 26229
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_99/chunk3",
+    "attempts": 1,
+    "duration_s": 86.64,
+    "usage": {
+      "input_tokens": 23115,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 5283,
+      "output_tokens_details": {
+        "reasoning_tokens": 3802
+      },
+      "total_tokens": 28398
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_99/chunk4",
+    "attempts": 1,
+    "duration_s": 66.57,
+    "usage": {
+      "input_tokens": 23270,
+      "input_tokens_details": {
+        "cached_tokens": 6400
+      },
+      "output_tokens": 4421,
+      "output_tokens_details": {
+        "reasoning_tokens": 2926
+      },
+      "total_tokens": 27691
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 4
+  }
+]

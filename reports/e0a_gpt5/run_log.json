@@ -1,0 +1,274 @@
+[
+  {
+    "contract_name": "contract_103",
+    "attempts": 1,
+    "duration_s": 115.36,
+    "usage": {
+      "input_tokens": 146230,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 5651,
+      "output_tokens_details": {
+        "reasoning_tokens": 4013
+      },
+      "total_tokens": 151881
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_104",
+    "attempts": 1,
+    "duration_s": 109.59,
+    "usage": {
+      "input_tokens": 138539,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 5464,
+      "output_tokens_details": {
+        "reasoning_tokens": 3809
+      },
+      "total_tokens": 144003
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_105",
+    "attempts": 1,
+    "duration_s": 116.39,
+    "usage": {
+      "input_tokens": 172828,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 5778,
+      "output_tokens_details": {
+        "reasoning_tokens": 4142
+      },
+      "total_tokens": 178606
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_118",
+    "attempts": 1,
+    "duration_s": 156.83,
+    "usage": {
+      "input_tokens": 166083,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 7212,
+      "output_tokens_details": {
+        "reasoning_tokens": 5615
+      },
+      "total_tokens": 173295
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_119",
+    "attempts": 1,
+    "duration_s": 141.4,
+    "usage": {
+      "input_tokens": 117783,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 6345,
+      "output_tokens_details": {
+        "reasoning_tokens": 4660
+      },
+      "total_tokens": 124128
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_121",
+    "attempts": 1,
+    "duration_s": 94.7,
+    "usage": {
+      "input_tokens": 176216,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 4745,
+      "output_tokens_details": {
+        "reasoning_tokens": 3106
+      },
+      "total_tokens": 180961
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_123",
+    "attempts": 1,
+    "duration_s": 110.55,
+    "usage": {
+      "input_tokens": 152131,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 5823,
+      "output_tokens_details": {
+        "reasoning_tokens": 4142
+      },
+      "total_tokens": 157954
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_13",
+    "attempts": 1,
+    "duration_s": 122.19,
+    "usage": {
+      "input_tokens": 147891,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 6246,
+      "output_tokens_details": {
+        "reasoning_tokens": 4605
+      },
+      "total_tokens": 154137
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_148",
+    "attempts": 1,
+    "duration_s": 99.08,
+    "usage": {
+      "input_tokens": 147585,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 5485,
+      "output_tokens_details": {
+        "reasoning_tokens": 3830
+      },
+      "total_tokens": 153070
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_15",
+    "attempts": 1,
+    "duration_s": 111.13,
+    "usage": {
+      "input_tokens": 142451,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 5944,
+      "output_tokens_details": {
+        "reasoning_tokens": 4350
+      },
+      "total_tokens": 148395
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_18",
+    "attempts": 1,
+    "duration_s": 135.37,
+    "usage": {
+      "input_tokens": 141340,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 6488,
+      "output_tokens_details": {
+        "reasoning_tokens": 4885
+      },
+      "total_tokens": 147828
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_25",
+    "attempts": 1,
+    "duration_s": 106.79,
+    "usage": {
+      "input_tokens": 138812,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 5516,
+      "output_tokens_details": {
+        "reasoning_tokens": 3852
+      },
+      "total_tokens": 144328
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_6",
+    "attempts": 1,
+    "duration_s": 86.05,
+    "usage": {
+      "input_tokens": 121593,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 4668,
+      "output_tokens_details": {
+        "reasoning_tokens": 3051
+      },
+      "total_tokens": 126261
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_88",
+    "attempts": 1,
+    "duration_s": 26.07,
+    "usage": {
+      "input_tokens": 97007,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 1789,
+      "output_tokens_details": {
+        "reasoning_tokens": 459
+      },
+      "total_tokens": 98796
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_99",
+    "attempts": 1,
+    "duration_s": 100.96,
+    "usage": {
+      "input_tokens": 153761,
+      "input_tokens_details": {
+        "cached_tokens": 74496
+      },
+      "output_tokens": 5282,
+      "output_tokens_details": {
+        "reasoning_tokens": 3611
+      },
+      "total_tokens": 159043
+    },
+    "error": null
+  },
+  {
+    "contract_name": "contract_88",
+    "attempts": 1,
+    "duration_s": 117.89,
+    "usage": {
+      "input_tokens": 150059,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 5706,
+      "output_tokens_details": {
+        "reasoning_tokens": 4039
+      },
+      "total_tokens": 155765
+    },
+    "error": null
+  }
+]
