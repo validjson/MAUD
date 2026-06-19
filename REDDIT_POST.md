@@ -48,8 +48,8 @@ for **37 / 110 (33.6%)** of them, and chunking drops that to **17 / 110
 same everything.** I pre‑registered a guess first: ~80–85% accuracy, similar
 hallucination. I was wrong by a lot:
 
-| | accuracy (of 1,380 fields) | hallucination (of 110 null cells) | valid JSON |
-|---|---:|---:|---:|
+| Model | accuracy (of 1,380 fields) | hallucination (of 110 null cells) | valid JSON |
+|---:|---:|---:|---:|
 | GPT‑5.5 (chunked) | 90.0% (1,242) | 15.5% (17) | 100% |
 | Qwen 2.5 32B (same prompt) | **30.6% (422)** | **54.5% (60)** | **100%** |
 
@@ -63,9 +63,7 @@ conflicts vs. GPT‑5.5's 7 — and the merge loses.
 An example of the problem: in one contract, all five chunks that touch the
 "specific performance" field commit an answer, and **none of them contain the
 phrase "specific performance."** It invented a legal ruling. Across that
-contract, 72 of 92 fields got contradictory values from different chunks. When
-the model has no evidence, it falls back to the most common answer in the
-training distribution.
+contract, 72 of 92 fields got contradictory values from different chunks.
 
 **The point:** a JSON Schema can force a value into every field. It can't teach
 a model to emit `null` when the evidence isn't there. *Knowing when to abstain*
