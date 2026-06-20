@@ -12,6 +12,8 @@ This repo follows that finding all the way through fine‑tuning, live, one stag
 at a time. **It might fail** — that's the point. The standings table below is the
 scoreboard, updated as each stage finishes.
 
+My paper that I am following and has details: https://zenodo.org/records/20075999
+
 ---
 
 ## The task
