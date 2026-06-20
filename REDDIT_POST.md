@@ -78,7 +78,7 @@ contamination swap-test is on the list but I did considerable violence to the or
 **What's next, live:** standard LoRA fine-tuning (E2, running now), then
 fine-tuning with abstention relabeling (E2a) to see if teaching the model to say
 `null` actually closes the gap. If the mods let me, then a commercial method (E3, results only because it's 'mine-mine-mine').
-Each might fail. I'll post results as we take them on:
+Each might fail. I'll post results as we take them on.
 
 
 Predictions, criticism, and "you're doing it wrong" are welcome. 
