@@ -5,10 +5,28 @@
 **Status:** scaffolded (repo NOT clean — see manifest)
 
 ## Hypothesis / what we're testing
-<!-- TODO(human): one paragraph — the question this run answers, and why. -->
+This is in reponse to a comment by u/traderprof on r/LocalLlama on incremental results https://www.reddit.com/r/LocalLLaMA/comments/1uajebu/valid_json_wrong_answer_a_boy_and_his_llm_a_saga/
+
+u/traderprof:
+
+the cross-chunk conflicts look fixable without fine-tuning abstention, require a quoted span for any non-null, drop to null when the chunk can't point to the text. contract_88 dies right there, five chunks answering and none have the phrase. 
+
+u/skiata (me):
+
+Yikes! u/traderprof, you caught a huge problem with the setup--I am not tracking the evidence for the fields. Any production system would require that. And I agree it may well fix the contract_88 problem or at least make it stunningly obvious to the LLM. The problem also just got harder.
+
+So me and Blood (my coding LLM), went back an forth on this and in the grand tradition of research, are starting over....
+
+Like picking a scab this keep getting "more interesting". I'll need to do another post because 2-experiments so far and it is looking noisy.
+
+u/traderprof: 
+
+that move does double duty. once each field carries its source span, accuracy and hallucination both go from trusted to checkable. will watch for the next post. 
+
+
 
 ## What changed vs the neighboring run
-<!-- TODO(human): the single variable that differs from the parent experiment. -->
+Differs from e1?? in that it requires evidence spans for field before emitting JSON value. 
 
 ## Configuration (auto-captured — see manifest.json for hashes)
 | | |
