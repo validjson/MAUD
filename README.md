@@ -40,14 +40,78 @@ The only question that matters is whether the *values* are right.
 |-------|-------|--------------|---------:|--------------:|:------:|
 | **E0a** | GPT‑5.5 | whole contract, strict schema | **90.7%** (1,251) | 33.6% (37) | ✅ |
 | **E0partial** | GPT‑5.5 | ~20K‑token chunks + algorithmic merge | **90.0%** (1,242) | 15.5% (17) | ✅ |
+| **E0partiale** | GPT‑5.5 | + evidence‑grounding (quote the supporting span, then answer) | **88.3%** (1,218) | 12.7% (14) | ✅ |
 | **E1** | Qwen 2.5 32B | **swap to an open model — same prompt** | **30.6%** (422) | **54.5%** (60) | ✅ |
-| **E2** | Qwen 2.5 32B + LoRA | standard fine‑tuning | … | … | 🔄 running |
-| **E2a** | Qwen 2.5 32B + LoRA | fine‑tune with abstention relabeling (PCL) | … | … | ⏳ |
+| **E1e** | Qwen 2.5 32B | + evidence‑grounding (rules‑only prompt) | **9.3%** (128) | **1.8%** (2) | ✅ |
+| **E1‑s** | Qwen 2.5 32B | E1 with the schema *removed from the prompt* (control) | **32.8%** (453) | 48.2% (53) | ✅ |
+| **E2** | Qwen 2.5 32B + LoRA | standard fine‑tuning | **56.3%** (777) | **95.5%** (105) | ✅ |
+| **E2a** | Qwen 2.5 32B + LoRA | fine‑tune with abstention relabeling (PCL) | **64.6%** (891) | **70.9%** (78) | ✅ |
+| **E2s** | Qwen 2.5 32B + LoRA | **supported targets** — a field is non‑null only in the chunk holding its evidence | **40.6%** (560) | **6.4%** (7) | ✅ |
 | **E3** | Qwen 2.5 32B + VocabMask LoRA | a commercial method (results only) | … | … | ⏳ |
 
 Every stage differs from its neighbor by **exactly one variable**, so each delta
 is attributable. Same chunks, same merge, same test set, **same prompt**
 throughout — E1 only swaps the model.
+
+**Evidence‑grounding (E*e):** the model must quote a verbatim supporting span
+before each answer (`null` for both when the chunk has no support). The
+discipline **splits hard by model strength**:
+
+- **GPT‑5.5 (E0partiale):** **99.5%** of cited spans are verbatim‑in‑chunk, and
+  it *slightly hurt* accuracy (−1.7 pts) by making an already‑careful model
+  over‑abstain (+26 cells). Cheap insurance, small cost.
+- **Qwen 2.5 32B (E1e):** it **backfired** — accuracy collapsed **30.6% → 9.3%**.
+  The model abstained on 1,229 of the 1,270 answerable cells: hallucination fell
+  to 1.8% only because it stopped answering. It *muzzled* the open model.
+
+So the open model has **no middle gear**: without evidence it fabricates
+everything (E1), with evidence it commits to nothing (E1e). The same span
+requirement that costs the strong model ~2 pts costs the weak one ~21.
+
+*(E1e used a rules‑only prompt — schema enforced via the grammar — because the
+schema‑embedded evidence prompt OOM'd the 80 GB GPU. **Control (E1‑s):** running
+base E1 with the schema likewise removed from the prompt lands at **32.8%**,
+right next to E1's 30.6% — so removing the schema does nothing on its own. The
+E1e collapse is the **evidence requirement**, not the prompt change.)*
+
+## Fine‑tuning: over‑commitment, and the supported‑target fix (E2 → E2s)
+
+Standard fine‑tuning (E2) nearly doubled accuracy (30.6% → 56.3%) **and drove
+hallucination to 95.5%** — of 110 null cells it fabricated 105. The cause is in
+the *training data*: every ~20K‑token chunk was paired with the **full**
+contract answer, so the model learned to emit all 92 fields from any slice,
+including slices that can't contain the evidence. Counting directly: across the
+test set E2 committed a value on **57.5% of per‑chunk cells whose evidence is in
+a different chunk** — pure cross‑chunk fabrication.
+
+**E2s fixes the targets:** a field is non‑null in a chunk **only if its evidence
+is in that chunk** (located via the gold evidence spans), `null` elsewhere. Same
+model, same everything — one variable: the training labels. The result splits
+sharply depending on whether you score the **merged** contract or the **per‑chunk**
+decision:
+
+| metric | E2 | E2a | **E2s** | GPT‑5.5 |
+|---|--:|--:|--:|--:|
+| merged accuracy | 56.3% | 64.6% | **40.6%** | 90.0% |
+| merged hallucination | 95.5% | 70.9% | **6.4%** | 15.5% |
+| **per‑chunk hallucination** | 93.3% | 82.4% | **1.3%** | 1.2% |
+| cross‑chunk conflicts | (many) | — | **2** | 7 |
+
+*(Per‑chunk = each chunk scored against the localized truth: "which fields can I
+answer from THIS slice?" — the ambiguity the merge hides.)*
+
+**The fix worked where it was aimed.** Per‑chunk hallucination fell **93.3% →
+1.3%, matching GPT‑5.5's 1.2%** — the open model now handles the per‑chunk
+"should I answer this?" decision as well as the closed one. Merged hallucination
+collapsed to **6.4%**, *below* GPT‑5.5's 15.5%, and cross‑chunk conflicts went
+from ~293 (E1) to **2**.
+
+**But it over‑corrected.** Merged accuracy *dropped* to 40.6%: the model learned
+"when unsure, say `null`" so well it now abstains on ~48% of fields that do have
+an answer. E2 answered everything (wrongly); E2s abstains too much. We swapped
+over‑commitment for over‑abstention — fabrication is solved, and **recall is now
+the bottleneck.** That gap is what the constrained‑decode stage (E3) is meant to
+close: keep the abstention, recover the answers.
 
 ## The finding so far (E1)
 

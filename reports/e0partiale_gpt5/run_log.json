@@ -1,0 +1,1484 @@
+[
+  {
+    "label": "contract_103/chunk0",
+    "attempts": 1,
+    "duration_s": 26.52,
+    "usage": {
+      "input_tokens": 32251,
+      "input_tokens_details": {
+        "cached_tokens": 32000
+      },
+      "output_tokens": 3338,
+      "output_tokens_details": {
+        "reasoning_tokens": 316
+      },
+      "total_tokens": 35589
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_103/chunk1",
+    "attempts": 1,
+    "duration_s": 26.81,
+    "usage": {
+      "input_tokens": 32311,
+      "input_tokens_details": {
+        "cached_tokens": 32000
+      },
+      "output_tokens": 3403,
+      "output_tokens_details": {
+        "reasoning_tokens": 398
+      },
+      "total_tokens": 35714
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_103/chunk2",
+    "attempts": 1,
+    "duration_s": 47.61,
+    "usage": {
+      "input_tokens": 31556,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5181,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 36737
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_103/chunk3",
+    "attempts": 1,
+    "duration_s": 62.16,
+    "usage": {
+      "input_tokens": 32666,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6188,
+      "output_tokens_details": {
+        "reasoning_tokens": 2787
+      },
+      "total_tokens": 38854
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_103/chunk4",
+    "attempts": 1,
+    "duration_s": 65.33,
+    "usage": {
+      "input_tokens": 24248,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6405,
+      "output_tokens_details": {
+        "reasoning_tokens": 2569
+      },
+      "total_tokens": 30653
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_104/chunk0",
+    "attempts": 1,
+    "duration_s": 26.31,
+    "usage": {
+      "input_tokens": 32799,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3333,
+      "output_tokens_details": {
+        "reasoning_tokens": 314
+      },
+      "total_tokens": 36132
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_104/chunk1",
+    "attempts": 1,
+    "duration_s": 37.58,
+    "usage": {
+      "input_tokens": 32207,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4153,
+      "output_tokens_details": {
+        "reasoning_tokens": 993
+      },
+      "total_tokens": 36360
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_104/chunk2",
+    "attempts": 1,
+    "duration_s": 50.09,
+    "usage": {
+      "input_tokens": 30416,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5292,
+      "output_tokens_details": {
+        "reasoning_tokens": 1687
+      },
+      "total_tokens": 35708
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_104/chunk3",
+    "attempts": 1,
+    "duration_s": 78.62,
+    "usage": {
+      "input_tokens": 31199,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 7731,
+      "output_tokens_details": {
+        "reasoning_tokens": 3106
+      },
+      "total_tokens": 38930
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_104/chunk4",
+    "attempts": 1,
+    "duration_s": 25.88,
+    "usage": {
+      "input_tokens": 18629,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3267,
+      "output_tokens_details": {
+        "reasoning_tokens": 232
+      },
+      "total_tokens": 21896
+    },
+    "error": null,
+    "contract_name": "contract_104",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_105/chunk0",
+    "attempts": 1,
+    "duration_s": 70.68,
+    "usage": {
+      "input_tokens": 32552,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6548,
+      "output_tokens_details": {
+        "reasoning_tokens": 2729
+      },
+      "total_tokens": 39100
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_105/chunk1",
+    "attempts": 1,
+    "duration_s": 31.22,
+    "usage": {
+      "input_tokens": 30978,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 3543,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 34521
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_105/chunk2",
+    "attempts": 1,
+    "duration_s": 29.93,
+    "usage": {
+      "input_tokens": 31588,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3466,
+      "output_tokens_details": {
+        "reasoning_tokens": 461
+      },
+      "total_tokens": 35054
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_105/chunk3",
+    "attempts": 1,
+    "duration_s": 31.81,
+    "usage": {
+      "input_tokens": 32186,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3690,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 35876
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_105/chunk4",
+    "attempts": 1,
+    "duration_s": 54.79,
+    "usage": {
+      "input_tokens": 31480,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5465,
+      "output_tokens_details": {
+        "reasoning_tokens": 2188
+      },
+      "total_tokens": 36945
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_105/chunk5",
+    "attempts": 1,
+    "duration_s": 54.58,
+    "usage": {
+      "input_tokens": 32417,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5355,
+      "output_tokens_details": {
+        "reasoning_tokens": 1907
+      },
+      "total_tokens": 37772
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_105/chunk6",
+    "attempts": 1,
+    "duration_s": 22.59,
+    "usage": {
+      "input_tokens": 21507,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3028,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 24535
+    },
+    "error": null,
+    "contract_name": "contract_105",
+    "chunk_id": 6
+  },
+  {
+    "label": "contract_118/chunk0",
+    "attempts": 1,
+    "duration_s": 30.86,
+    "usage": {
+      "input_tokens": 32027,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3467,
+      "output_tokens_details": {
+        "reasoning_tokens": 438
+      },
+      "total_tokens": 35494
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_118/chunk1",
+    "attempts": 1,
+    "duration_s": 30.73,
+    "usage": {
+      "input_tokens": 32152,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3521,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 35673
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_118/chunk2",
+    "attempts": 1,
+    "duration_s": 43.0,
+    "usage": {
+      "input_tokens": 31735,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4496,
+      "output_tokens_details": {
+        "reasoning_tokens": 1281
+      },
+      "total_tokens": 36231
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_118/chunk3",
+    "attempts": 1,
+    "duration_s": 54.45,
+    "usage": {
+      "input_tokens": 31016,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5521,
+      "output_tokens_details": {
+        "reasoning_tokens": 1936
+      },
+      "total_tokens": 36537
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_118/chunk4",
+    "attempts": 1,
+    "duration_s": 76.6,
+    "usage": {
+      "input_tokens": 33382,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6843,
+      "output_tokens_details": {
+        "reasoning_tokens": 2583
+      },
+      "total_tokens": 40225
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_118/chunk5",
+    "attempts": 1,
+    "duration_s": 24.66,
+    "usage": {
+      "input_tokens": 29046,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3141,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 32187
+    },
+    "error": null,
+    "contract_name": "contract_118",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_119/chunk0",
+    "attempts": 1,
+    "duration_s": 59.09,
+    "usage": {
+      "input_tokens": 32868,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5915,
+      "output_tokens_details": {
+        "reasoning_tokens": 1769
+      },
+      "total_tokens": 38783
+    },
+    "error": null,
+    "contract_name": "contract_119",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_119/chunk1",
+    "attempts": 1,
+    "duration_s": 56.26,
+    "usage": {
+      "input_tokens": 31261,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5533,
+      "output_tokens_details": {
+        "reasoning_tokens": 1939
+      },
+      "total_tokens": 36794
+    },
+    "error": null,
+    "contract_name": "contract_119",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_119/chunk2",
+    "attempts": 1,
+    "duration_s": 60.67,
+    "usage": {
+      "input_tokens": 27355,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5689,
+      "output_tokens_details": {
+        "reasoning_tokens": 2238
+      },
+      "total_tokens": 33044
+    },
+    "error": null,
+    "contract_name": "contract_119",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_121/chunk0",
+    "attempts": 1,
+    "duration_s": 65.12,
+    "usage": {
+      "input_tokens": 32823,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6005,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 38828
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_121/chunk1",
+    "attempts": 1,
+    "duration_s": 30.82,
+    "usage": {
+      "input_tokens": 30914,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3535,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 34449
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_121/chunk2",
+    "attempts": 1,
+    "duration_s": 30.62,
+    "usage": {
+      "input_tokens": 31755,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3509,
+      "output_tokens_details": {
+        "reasoning_tokens": 488
+      },
+      "total_tokens": 35264
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_121/chunk3",
+    "attempts": 1,
+    "duration_s": 41.5,
+    "usage": {
+      "input_tokens": 31455,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4274,
+      "output_tokens_details": {
+        "reasoning_tokens": 1034
+      },
+      "total_tokens": 35729
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_121/chunk4",
+    "attempts": 1,
+    "duration_s": 56.13,
+    "usage": {
+      "input_tokens": 31969,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5375,
+      "output_tokens_details": {
+        "reasoning_tokens": 1961
+      },
+      "total_tokens": 37344
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_121/chunk5",
+    "attempts": 1,
+    "duration_s": 47.45,
+    "usage": {
+      "input_tokens": 31650,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4854,
+      "output_tokens_details": {
+        "reasoning_tokens": 1462
+      },
+      "total_tokens": 36504
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_121/chunk6",
+    "attempts": 1,
+    "duration_s": 49.05,
+    "usage": {
+      "input_tokens": 25479,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4720,
+      "output_tokens_details": {
+        "reasoning_tokens": 1552
+      },
+      "total_tokens": 30199
+    },
+    "error": null,
+    "contract_name": "contract_121",
+    "chunk_id": 6
+  },
+  {
+    "label": "contract_123/chunk0",
+    "attempts": 1,
+    "duration_s": 28.47,
+    "usage": {
+      "input_tokens": 31766,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3344,
+      "output_tokens_details": {
+        "reasoning_tokens": 318
+      },
+      "total_tokens": 35110
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_123/chunk1",
+    "attempts": 1,
+    "duration_s": 37.26,
+    "usage": {
+      "input_tokens": 32221,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3852,
+      "output_tokens_details": {
+        "reasoning_tokens": 847
+      },
+      "total_tokens": 36073
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_123/chunk2",
+    "attempts": 1,
+    "duration_s": 60.35,
+    "usage": {
+      "input_tokens": 30527,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5794,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 36321
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_123/chunk3",
+    "attempts": 1,
+    "duration_s": 79.22,
+    "usage": {
+      "input_tokens": 31655,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 7206,
+      "output_tokens_details": {
+        "reasoning_tokens": 2973
+      },
+      "total_tokens": 38861
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_123/chunk4",
+    "attempts": 1,
+    "duration_s": 38.49,
+    "usage": {
+      "input_tokens": 31171,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4096,
+      "output_tokens_details": {
+        "reasoning_tokens": 852
+      },
+      "total_tokens": 35267
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_123/chunk5",
+    "attempts": 1,
+    "duration_s": 40.75,
+    "usage": {
+      "input_tokens": 18161,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4288,
+      "output_tokens_details": {
+        "reasoning_tokens": 1034
+      },
+      "total_tokens": 22449
+    },
+    "error": null,
+    "contract_name": "contract_123",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_13/chunk0",
+    "attempts": 1,
+    "duration_s": 56.63,
+    "usage": {
+      "input_tokens": 32542,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5427,
+      "output_tokens_details": {
+        "reasoning_tokens": 1723
+      },
+      "total_tokens": 37969
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_13/chunk1",
+    "attempts": 1,
+    "duration_s": 30.29,
+    "usage": {
+      "input_tokens": 31547,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3474,
+      "output_tokens_details": {
+        "reasoning_tokens": 469
+      },
+      "total_tokens": 35021
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_13/chunk2",
+    "attempts": 1,
+    "duration_s": 67.93,
+    "usage": {
+      "input_tokens": 31986,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6334,
+      "output_tokens_details": {
+        "reasoning_tokens": 2617
+      },
+      "total_tokens": 38320
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_13/chunk3",
+    "attempts": 1,
+    "duration_s": 49.23,
+    "usage": {
+      "input_tokens": 30747,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5031,
+      "output_tokens_details": {
+        "reasoning_tokens": 1731
+      },
+      "total_tokens": 35778
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_13/chunk4",
+    "attempts": 1,
+    "duration_s": 56.42,
+    "usage": {
+      "input_tokens": 27811,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5268,
+      "output_tokens_details": {
+        "reasoning_tokens": 1961
+      },
+      "total_tokens": 33079
+    },
+    "error": null,
+    "contract_name": "contract_13",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_148/chunk0",
+    "attempts": 1,
+    "duration_s": 29.08,
+    "usage": {
+      "input_tokens": 32579,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3330,
+      "output_tokens_details": {
+        "reasoning_tokens": 287
+      },
+      "total_tokens": 35909
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_148/chunk1",
+    "attempts": 1,
+    "duration_s": 29.29,
+    "usage": {
+      "input_tokens": 32448,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3445,
+      "output_tokens_details": {
+        "reasoning_tokens": 440
+      },
+      "total_tokens": 35893
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_148/chunk2",
+    "attempts": 1,
+    "duration_s": 45.67,
+    "usage": {
+      "input_tokens": 31538,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4640,
+      "output_tokens_details": {
+        "reasoning_tokens": 1410
+      },
+      "total_tokens": 36178
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_148/chunk3",
+    "attempts": 1,
+    "duration_s": 68.31,
+    "usage": {
+      "input_tokens": 30793,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6299,
+      "output_tokens_details": {
+        "reasoning_tokens": 2588
+      },
+      "total_tokens": 37092
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_148/chunk4",
+    "attempts": 1,
+    "duration_s": 69.93,
+    "usage": {
+      "input_tokens": 27006,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6470,
+      "output_tokens_details": {
+        "reasoning_tokens": 2380
+      },
+      "total_tokens": 33476
+    },
+    "error": null,
+    "contract_name": "contract_148",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_15/chunk0",
+    "attempts": 1,
+    "duration_s": 27.85,
+    "usage": {
+      "input_tokens": 32959,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3266,
+      "output_tokens_details": {
+        "reasoning_tokens": 232
+      },
+      "total_tokens": 36225
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_15/chunk1",
+    "attempts": 1,
+    "duration_s": 36.45,
+    "usage": {
+      "input_tokens": 32716,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3849,
+      "output_tokens_details": {
+        "reasoning_tokens": 844
+      },
+      "total_tokens": 36565
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_15/chunk2",
+    "attempts": 1,
+    "duration_s": 65.33,
+    "usage": {
+      "input_tokens": 31587,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5598,
+      "output_tokens_details": {
+        "reasoning_tokens": 2198
+      },
+      "total_tokens": 37185
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_15/chunk3",
+    "attempts": 1,
+    "duration_s": 82.94,
+    "usage": {
+      "input_tokens": 32725,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 7402,
+      "output_tokens_details": {
+        "reasoning_tokens": 3106
+      },
+      "total_tokens": 40127
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_15/chunk4",
+    "attempts": 1,
+    "duration_s": 31.02,
+    "usage": {
+      "input_tokens": 19293,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3547,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 22840
+    },
+    "error": null,
+    "contract_name": "contract_15",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_18/chunk0",
+    "attempts": 1,
+    "duration_s": 45.27,
+    "usage": {
+      "input_tokens": 32278,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4713,
+      "output_tokens_details": {
+        "reasoning_tokens": 1034
+      },
+      "total_tokens": 36991
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_18/chunk1",
+    "attempts": 1,
+    "duration_s": 31.29,
+    "usage": {
+      "input_tokens": 31861,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3537,
+      "output_tokens_details": {
+        "reasoning_tokens": 516
+      },
+      "total_tokens": 35398
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_18/chunk2",
+    "attempts": 1,
+    "duration_s": 42.63,
+    "usage": {
+      "input_tokens": 31923,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4329,
+      "output_tokens_details": {
+        "reasoning_tokens": 1153
+      },
+      "total_tokens": 36252
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_18/chunk3",
+    "attempts": 1,
+    "duration_s": 68.1,
+    "usage": {
+      "input_tokens": 32502,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6252,
+      "output_tokens_details": {
+        "reasoning_tokens": 2575
+      },
+      "total_tokens": 38754
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_18/chunk4",
+    "attempts": 1,
+    "duration_s": 27.43,
+    "usage": {
+      "input_tokens": 19508,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3300,
+      "output_tokens_details": {
+        "reasoning_tokens": 259
+      },
+      "total_tokens": 22808
+    },
+    "error": null,
+    "contract_name": "contract_18",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_25/chunk0",
+    "attempts": 1,
+    "duration_s": 29.8,
+    "usage": {
+      "input_tokens": 32114,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3382,
+      "output_tokens_details": {
+        "reasoning_tokens": 361
+      },
+      "total_tokens": 35496
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_25/chunk1",
+    "attempts": 1,
+    "duration_s": 40.22,
+    "usage": {
+      "input_tokens": 31191,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4117,
+      "output_tokens_details": {
+        "reasoning_tokens": 964
+      },
+      "total_tokens": 35308
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_25/chunk2",
+    "attempts": 1,
+    "duration_s": 60.95,
+    "usage": {
+      "input_tokens": 30778,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5671,
+      "output_tokens_details": {
+        "reasoning_tokens": 1998
+      },
+      "total_tokens": 36449
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_25/chunk3",
+    "attempts": 1,
+    "duration_s": 61.54,
+    "usage": {
+      "input_tokens": 32115,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6032,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 38147
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_25/chunk4",
+    "attempts": 1,
+    "duration_s": 28.45,
+    "usage": {
+      "input_tokens": 19493,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3331,
+      "output_tokens_details": {
+        "reasoning_tokens": 295
+      },
+      "total_tokens": 22824
+    },
+    "error": null,
+    "contract_name": "contract_25",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_6/chunk0",
+    "attempts": 1,
+    "duration_s": 70.46,
+    "usage": {
+      "input_tokens": 33356,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6183,
+      "output_tokens_details": {
+        "reasoning_tokens": 2372
+      },
+      "total_tokens": 39539
+    },
+    "error": null,
+    "contract_name": "contract_6",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_6/chunk1",
+    "attempts": 1,
+    "duration_s": 63.89,
+    "usage": {
+      "input_tokens": 32450,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5747,
+      "output_tokens_details": {
+        "reasoning_tokens": 2485
+      },
+      "total_tokens": 38197
+    },
+    "error": null,
+    "contract_name": "contract_6",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_6/chunk2",
+    "attempts": 1,
+    "duration_s": 78.74,
+    "usage": {
+      "input_tokens": 29404,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6091,
+      "output_tokens_details": {
+        "reasoning_tokens": 2585
+      },
+      "total_tokens": 35495
+    },
+    "error": null,
+    "contract_name": "contract_6",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_88/chunk0",
+    "attempts": 1,
+    "duration_s": 30.61,
+    "usage": {
+      "input_tokens": 28633,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3362,
+      "output_tokens_details": {
+        "reasoning_tokens": 331
+      },
+      "total_tokens": 31995
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_88/chunk1",
+    "attempts": 1,
+    "duration_s": 26.79,
+    "usage": {
+      "input_tokens": 30254,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3232,
+      "output_tokens_details": {
+        "reasoning_tokens": 227
+      },
+      "total_tokens": 33486
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_88/chunk2",
+    "attempts": 1,
+    "duration_s": 74.58,
+    "usage": {
+      "input_tokens": 30048,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 6804,
+      "output_tokens_details": {
+        "reasoning_tokens": 3076
+      },
+      "total_tokens": 36852
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_88/chunk3",
+    "attempts": 1,
+    "duration_s": 52.67,
+    "usage": {
+      "input_tokens": 30481,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5145,
+      "output_tokens_details": {
+        "reasoning_tokens": 1909
+      },
+      "total_tokens": 35626
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_88/chunk4",
+    "attempts": 1,
+    "duration_s": 54.22,
+    "usage": {
+      "input_tokens": 30018,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5499,
+      "output_tokens_details": {
+        "reasoning_tokens": 1548
+      },
+      "total_tokens": 35517
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 4
+  },
+  {
+    "label": "contract_88/chunk5",
+    "attempts": 1,
+    "duration_s": 44.23,
+    "usage": {
+      "input_tokens": 23661,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 4470,
+      "output_tokens_details": {
+        "reasoning_tokens": 1394
+      },
+      "total_tokens": 28131
+    },
+    "error": null,
+    "contract_name": "contract_88",
+    "chunk_id": 5
+  },
+  {
+    "label": "contract_99/chunk0",
+    "attempts": 1,
+    "duration_s": 28.99,
+    "usage": {
+      "input_tokens": 32695,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3377,
+      "output_tokens_details": {
+        "reasoning_tokens": 338
+      },
+      "total_tokens": 36072
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_99/chunk1",
+    "attempts": 1,
+    "duration_s": 31.34,
+    "usage": {
+      "input_tokens": 31837,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3446,
+      "output_tokens_details": {
+        "reasoning_tokens": 441
+      },
+      "total_tokens": 35283
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 1
+  },
+  {
+    "label": "contract_99/chunk2",
+    "attempts": 1,
+    "duration_s": 57.21,
+    "usage": {
+      "input_tokens": 31685,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5630,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 37315
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 2
+  },
+  {
+    "label": "contract_99/chunk3",
+    "attempts": 1,
+    "duration_s": 63.36,
+    "usage": {
+      "input_tokens": 32058,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5860,
+      "output_tokens_details": {
+        "reasoning_tokens": 2276
+      },
+      "total_tokens": 37918
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 3
+  },
+  {
+    "label": "contract_99/chunk4",
+    "attempts": 1,
+    "duration_s": 62.36,
+    "usage": {
+      "input_tokens": 32213,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 5947,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      },
+      "total_tokens": 38160
+    },
+    "error": null,
+    "contract_name": "contract_99",
+    "chunk_id": 4
+  }
+]

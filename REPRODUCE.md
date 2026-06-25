@@ -20,6 +20,11 @@ python scripts/analyse_e0partial.py --dir reports/e0partial_gpt5
 
 # E0a — GPT-5.5 whole-contract (90.7%)
 python scripts/analyse_e0a.py
+
+# E2 cross-chunk fabrications — the over-commitment mechanism (stdlib only, no numpy)
+# Counts how often E2 committed a value on a chunk that can't see the field's
+# evidence: 3,264 (57.5% of per-chunk commits), 93% evidence-location coverage.
+python scripts/count_cross_chunk_fab.py
 ```
 
 Each writes/refreshes `analysis.md` and `analysis.json` in the stage dir and
@@ -52,6 +57,23 @@ which we don't redistribute in bulk — get them from
 [the Atticus Project](https://www.atticusprojectai.org/maud) (CC BY 4.0) and
 point the script at them.
 
+## Level 2evidence (GPT-5.5: E0ae, E0partiale)
+
+Require evidence for extraction per comment from u/traderprof: (https://old.reddit.com/r/LocalLLaMA/comments/1uajebu/valid_json_wrong_answer_a_boy_and_his_llm_a_saga/)
+
+- E0partiale: 
+
+```
+python scripts/run_e0_chunked.py \
+    --schema data/combined/schema_evidence.json \
+    --system-prompt-file data/training/chunked/system_prompt_evidence_rules.txt \
+    --max-output-tokens 16000 \
+    --out-dir reports/e0partiale_gpt5
+```
+
+
+
+
 ## Level 3 — re-run the open model (E1: Qwen 2.5 32B)
 
 Needs a GPU (we used a single A100 80 GB) and the bundled chunked test input
@@ -61,7 +83,7 @@ E1 is **standard grammar-constrained decoding** — nothing proprietary:
 
 - **Model:** `Qwen/Qwen2.5-32B-Instruct`, bf16, HuggingFace `transformers`.
 - **Constraint:** an [llguidance](https://github.com/guidance-ai/llguidance)
-  JSON-Schema grammar built from `data/training/chunked/schema_qwen.json`, applied
+  JSON-Schema grammar built from `data/training/chunked/schema.json`, applied
   as a per-step logit mask. We call this the `schemabpe` mask — it is *only* the
   llguidance grammar, no learned component.
 - **Decoding:** greedy, `max_tokens = 3072`, one ~20K-token chunk at a time.

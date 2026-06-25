@@ -237,6 +237,7 @@ def extract_one_contract(
     verbosity: str,
     log: logging.Logger,
     contract_name: str,
+    max_output_tokens: int | None = None,
 ) -> tuple[dict | None, dict]:
     """Single contract → (parsed prediction, metadata).  Uses the Responses
     API (`client.responses.create`) — Structured Outputs sit under
@@ -265,13 +266,16 @@ def extract_one_contract(
         meta["attempts"] = attempt
         try:
             t0 = time.time()
-            resp = client.responses.create(
+            create_kwargs = dict(
                 model=model,
                 input=messages,
                 text=text_format,
                 reasoning=reasoning,
                 store=True,
             )
+            if max_output_tokens:
+                create_kwargs["max_output_tokens"] = max_output_tokens
+            resp = client.responses.create(**create_kwargs)
             meta["duration_s"] = round(time.time() - t0, 2)
             meta["usage"] = resp.usage.model_dump() if getattr(resp, "usage", None) else None
             # The Responses API exposes the model's final text via output_text.
@@ -306,6 +310,10 @@ def main() -> None:
     p.add_argument("--verbosity", default=DEFAULT_VERBOSITY,
                    choices=("low", "medium", "high"),
                    help=f"Output verbosity (default: {DEFAULT_VERBOSITY} — concise JSON)")
+    p.add_argument("--max-output-tokens", type=int, default=16000,
+                   help="Cap on response tokens (incl. reasoning).  Default 16000 "
+                        "— headroom for whole-contract evidence output (~2.8x base) "
+                        "so a low API default can't truncate the JSON.  0 = no cap.")
     p.add_argument("--dry-run", action="store_true",
                    help="Build prompts and exit before any API call")
     p.add_argument("--restart", action="store_true",
@@ -408,6 +416,7 @@ def main() -> None:
             pred, meta = extract_one_contract(
                 client, args.model, schema_block, messages,
                 args.reasoning_effort, args.verbosity, log, name,
+                max_output_tokens=args.max_output_tokens or None,
             )
             metadata.append(meta)
             if pred is not None:

@@ -88,7 +88,52 @@ Maybe the prompt is the problem, it is in (https://github.com/validjson/MAUD/blo
 
 ---
 
-## Post 2 — E2 (draft once results are in)
+## Post 2 - Current active draft
+
+**Title:**
+> Valid JSON, Wrong Answer: u/traderprof Ruins Sunday, but I'm grateful for a good suggestion that went !SPLAT! interestingly...
+
+**Body:**
+
+u/traderprof suggested that the wild over-generation problem on contract_88 (see https://redd.it/1uajebu) was due to not requiring the excerpt supporting the JSON value to be represented.  
+
+Too big for a comment, but I'll keep this as stand alone as possible.
+
+So here is what we, me and my faithful LLM Blood, did:
+
+*Added Evidence Spans* 
+
+
+For each of the 92 fields I added a paired "evidence_spans" field that the model has to fill in BEFORE it answers. So the order is: quote verbatim text from the chunk that supports the answer, THEN give the answer, and emit null for both if the chunk has no supporting text. Quote-then-answer, basically your proposal. (Side quest that nearly bit me: MAUD's gold evidence glues non-contiguous spans together with an "<omitted>" tag, so naive string matching against the gold looks ~60% broken until you split on it. Blood caught it.)
+
+First run is the closed model again (GPT-5.5, chunked, now with the evidence requirement). I'm calling it E0partiale. Two things:
+
+Your instinct on grounding is dead on. 99.5% of GPT-5.5's cited spans (1448/1456) are verbatim-in-chunk. So contract_88 style "five chunks answer and none contain the phrase" basically cannot happen anymore. You cannot quote text that is not there, and the model mostly doesn't try.
+
+BUT requiring evidence slightly HURT the closed model, which I did not expect:
+
+    E0partial  (no evidence): 90.0% accuracy, 15.5% hallucination
+    E0partiale (evidence):    88.3% accuracy, 12.7% hallucination
+
+Accuracy dropped 1.7 points. What happened: GPT-5.5 already abstains pretty well, so forcing it to quote first mostly made it MORE cautious. It declined to answer 26 more cells where it used to commit (and was usually right), in exchange for ~3 fewer hallucinations. On a model that is already careful, "show your work" buys caution, not accuracy. (Noise floor here is ~0.43 pts from two GPT-5.5 replicates, so the 1.7 is real and the hallucination move is basically noise.)
+
+The interesting test is the open model, since that is the thing that was actually fabricating in the first place. Qwen 32B + evidence ("E1e") is done now, and it does NOT rescue the open model. It muzzles it:
+
+    E1  (no evidence): 30.6% accuracy, 54.5% hallucination
+    E1e (evidence):     9.3% accuracy,  1.8% hallucination
+
+Hallucination basically went to zero, but only because Qwen stopped answering. It abstained on 1,229 of the 1,270 cells that actually have an answer. So evidence killed the fabrication by killing the answers. The same trick that costs GPT-5.5 a point and a half just nukes the weak model 21 points. The open model has no middle gear: without evidence it fabricates everything, with evidence it commits to nothing.
+
+So your fix is real, it just splits by model strength. On the strong closed model it works (kills the contract_88 fabrication, 99.5% of cited spans are verbatim, costs a little accuracy). On the weak open model it backfires the other way into total abstention. "Require a span" is cheap insurance for a careful model and a muzzle for a sloppy one.
+
+(I checked the obvious confound: E1e used a lighter prompt than base E1 for GPU-memory reasons, so I re-ran base E1 with the schema removed from the prompt too. It lands at 32.8%, right next to E1's 30.6% -- so dropping the schema does nothing by itself. The collapse is the evidence requirement, not the prompt. And contract_88, our problem child, tried to quote all 92 fields, blew the token budget, and got truncated -- it genuinely cannot help itself.)
+
+Raw predictions and the scoring are in the repo if you want to check the arithmetic, including the 99.5% grounding count.
+
+
+
+
+## Planned Post 3 — E2 (draft once results are in)
 
 Hook candidates, depending on outcome:
 - if standard LoRA regresses on the hard fields: *"Fine-tuning made my model

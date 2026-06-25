@@ -1,0 +1,40 @@
+[
+  {
+    "label": "contract_103/chunk0",
+    "attempts": 1,
+    "duration_s": 28.67,
+    "usage": {
+      "input_tokens": 32251,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 3310,
+      "output_tokens_details": {
+        "reasoning_tokens": 288
+      },
+      "total_tokens": 35561
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 0
+  },
+  {
+    "label": "contract_103/chunk1",
+    "attempts": 1,
+    "duration_s": 28.95,
+    "usage": {
+      "input_tokens": 32311,
+      "input_tokens_details": {
+        "cached_tokens": 15616
+      },
+      "output_tokens": 3487,
+      "output_tokens_details": {
+        "reasoning_tokens": 482
+      },
+      "total_tokens": 35798
+    },
+    "error": null,
+    "contract_name": "contract_103",
+    "chunk_id": 1
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "name": "e1_Qw2_5_32b_evid_local",
+  "stage": "e1",
+  "variation": "Qw2_5_32b_evid_local",
+  "one_line": "Qwen2.5-32B + evidence requirement, scored per-chunk against localized gold",
+  "created": "2026-06-25T19:15:56+00:00",
+  "repos": {
+    "MAUD": {
+      "sha": "58593dc6f4410de62b46bad20790a330ced008a5",
+      "branch": "main",
+      "dirty": true,
+      "upstream": "origin/main",
+      "ahead": 0,
+      "behind": 0,
+      "pushed": true
+    }
+  },
+  "model": {
+    "id": "Qwen/Qwen2.5-32B-Instruct"
+  },
+  "command": "python runs/e1_Qw2_5_32b_evid_local/inputs/maud_decode.py --model Qwen/Qwen2.5-32B-Instruct --mask schemabpe --schema runs/e1_Qw2_5_32b_evid_local/inputs/schema_evidence.json --system-prompt-file runs/e1_Qw2_5_32b_evid_local/inputs/system_prompt_evidence_rules.txt --data data/training/chunked/e0partial_sample.jsonl --out-dir runs/e1_Qw2_5_32b_evid_local/results --device cuda --max-tokens 16384 --restart",
+  "decode": "mask=schemabpe, max_tokens=16384, temperature=0 (greedy), device=cuda; headline=answers-only per-chunk vs localized gold; evidence spans=secondary grounding metric",
+  "inputs": [
+    {
+      "role": "decoder",
+      "path": "src/maud_decode.py",
+      "sha256": "e693fd3da94978c32aa306d6e674accd166fdb0dbfda95f9814f5d398123a36c",
+      "bytes": 19586,
+      "snapshot": "inputs/maud_decode.py"
+    },
+    {
+      "role": "schema",
+      "path": "data/training/chunked/schema_evidence.json",
+      "sha256": "c5d3094d6284dcb4ef87a1783862d3926d01ca739d99047beeef07b8dfb67a14",
+      "bytes": 104104,
+      "snapshot": "inputs/schema_evidence.json"
+    },
+    {
+      "role": "prompt",
+      "path": "data/training/chunked/system_prompt_evidence_rules.txt",
+      "sha256": "cd95128cf52efb872e65ed5e9f1a2fdf5dcd5d4de2711d63b5dea7b1ff9cfb84",
+      "bytes": 1649,
+      "snapshot": "inputs/system_prompt_evidence_rules.txt"
+    },
+    {
+      "role": "eval_data",
+      "path": "data/training/chunked/e0partial_sample.jsonl",
+      "sha256": "34d6eb8a1748c9963f08acb8de1d05c19aa3942452b9066eafe69cb4630b3347",
+      "bytes": 6141638,
+      "snapshot": null
+    }
+  ],
+  "scoring": {
+    "script": "scripts/score_per_chunk.py",
+    "gold": {
+      "path": "data/training/chunked/eval15_localized.jsonl",
+      "sha256": "2cb821bbe0982bc3673fbc1670d77a24f91a024b412c669ded6b9e724f3291c6",
+      "bytes": 6039557
+    }
+  },
+  "env": {
+    "python": "3.14.4"
+  },
+  "results": null,
+  "reproducibility_clean": false
+}

@@ -160,9 +160,9 @@ SYSTEM_PROMPT = (
 )
 
 
-def build_messages(target_input: str) -> list[dict]:
+def build_messages(target_input: str, system_prompt: str = SYSTEM_PROMPT) -> list[dict]:
     return [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": system_prompt},
         {"role": "user", "content": target_input},
     ]
 
@@ -176,6 +176,7 @@ def extract_one(
     verbosity: str,
     log: logging.Logger,
     label: str,
+    max_output_tokens: int | None = None,
 ) -> tuple[dict | None, dict]:
     meta = {
         "label": label,
@@ -199,13 +200,16 @@ def extract_one(
         meta["attempts"] = attempt
         try:
             t0 = time.time()
-            resp = client.responses.create(
+            create_kwargs = dict(
                 model=model,
                 input=messages,
                 text=text_format,
                 reasoning=reasoning,
                 store=True,
             )
+            if max_output_tokens:
+                create_kwargs["max_output_tokens"] = max_output_tokens
+            resp = client.responses.create(**create_kwargs)
             meta["duration_s"] = round(time.time() - t0, 2)
             meta["usage"] = resp.usage.model_dump() if getattr(resp, "usage", None) else None
             parsed = json.loads(resp.output_text)
@@ -241,6 +245,19 @@ def main():
                    help="Output directory (default: reports/e0partial_gpt5). "
                         "Use a different path to run independent passes for "
                         "non-determinism measurement.")
+    p.add_argument("--schema", type=Path, default=SCHEMA_PATH,
+                   help="Schema to enforce (default: data/combined/schema.json). "
+                        "Pass data/combined/schema_evidence.json for the "
+                        "evidence-grounding condition (E0partiale).")
+    p.add_argument("--system-prompt-file", type=Path, default=None,
+                   help="System prompt file (default: built-in prompt). For the "
+                        "evidence condition pass "
+                        "data/training/chunked/system_prompt_evidence_rules.txt "
+                        "(rules-only; the schema is enforced via the API).")
+    p.add_argument("--max-output-tokens", type=int, default=16000,
+                   help="Cap on response tokens (incl. reasoning).  Default 16000 "
+                        "— headroom for the ~2.8x-larger evidence output so a low "
+                        "API default can't truncate the JSON.  0 = no explicit cap.")
     args = p.parse_args()
 
     out_dir = args.out_dir
@@ -260,8 +277,16 @@ def main():
     log.info(f"Sample:   {len(rows)} chunks "
              f"across {len({r['contract_name'] for r in rows})} contracts")
 
+    # System prompt: built-in by default, or an override file (e.g. the
+    # evidence-grounding prompt for E0partiale).
+    system_prompt = (args.system_prompt_file.read_text()
+                     if args.system_prompt_file else SYSTEM_PROMPT)
+    log.info(f"Prompt:   {'file ' + str(args.system_prompt_file) if args.system_prompt_file else 'built-in'} "
+             f"({len(system_prompt):,} chars)")
+
     # Schema prep
-    schema = json.loads(SCHEMA_PATH.read_text())
+    log.info(f"Schema:   {args.schema}")
+    schema = json.loads(args.schema.read_text())
     schema_block = strip_schema_for_openai(schema)
     schema_block, value_remap = normalize_enum_quotes(schema_block)
     n_remapped = sum(len(m) for m in value_remap.values())
@@ -315,10 +340,11 @@ def main():
             label = f"{cname}/chunk{cid}"
             log.info(f"[{i}/{len(todo)}] {label}")
 
-            messages = build_messages(row["input"])
+            messages = build_messages(row["input"], system_prompt)
             pred, meta = extract_one(
                 client, args.model, schema_block, messages,
                 args.reasoning_effort, args.verbosity, log, label,
+                max_output_tokens=args.max_output_tokens or None,
             )
             meta["contract_name"] = cname
             meta["chunk_id"] = cid

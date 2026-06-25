@@ -1,13 +1,36 @@
-# Level 1 — recompute the committed results (analysers).  This is all you need
-# to verify every number in the README.
+# =============================================================================
+# Pick the level you need. Levels are additive (L3 includes L1).
+# =============================================================================
+
+# --- Level 1: recompute the committed results (analysers + merger) -----------
+# All you need to verify every number in the README. No model, no API, no GPU.
 numpy>=1.24
 
-# Level 2 — re-run the GPT-5.5 stages (E0a, E0partial) yourself.  Needs your own
-# OPENAI_API_KEY and spends real money.
+# --- Level 2: re-run the GPT-5.5 stages (E0a, E0partial, E0*e) ----------------
+# Needs your own OPENAI_API_KEY and spends real money.
 openai>=1.40
 
-# Level 3 — re-run the open-weights stage (E1) yourself additionally needs a GPU
-# and:  torch  transformers  llguidance
-# We use a standard llguidance JSON-Schema grammar over Qwen 2.5 32B Instruct.
-# See REPRODUCE.md for the exact model / params; the production decoder itself is
-# our commercial stack and is not shipped (E1 uses none of its proprietary parts).
+# --- Level 3: re-run the open-weights stages (E1, E1e, E1-s) -----------------
+# scripts/decode_schemabpe.py: standard transformers + an llguidance JSON-Schema
+# grammar over Qwen 2.5 32B. Needs a GPU (we used one A100 80GB).
+#
+#   torch         on Linux+GPU, `pip install torch` already pulls the CUDA build
+#                 from PyPI (no special --index-url needed for recent torch).
+#                 The pod ran torch 2.12.1+cu130 on an A100. Any >=2.4 should work.
+#   transformers  the code uses 5.x APIs; pod ran 5.12.1.
+#   llguidance    VERSION-SENSITIVE. The grammar workarounds in decode_schemabpe.py
+#                 (the anyOf / type-list / uniqueItems handling) target the 1.7.x
+#                 API. Pod ran 1.7.6. Pinned tight on purpose -- a 1.8/2.x bump
+#                 may change grammar_from_json_schema / compute_logit_bias.
+torch>=2.4
+transformers>=5.0
+llguidance>=1.7,<1.8
+# numpy already required above.
+
+# NOT a dependency: flash-attn. The decoder uses torch's built-in SDPA
+# (memory-efficient backend). flash-attn-the-package wants an nvcc that matches
+# torch's compiled CUDA and has no wheel for the cu130 combo -- skip it.
+
+# Training-only (E2 / E2a LoRA fine-tuning, NOT needed for E1/E1e/E1-s inference):
+#   bitsandbytes>=0.43   datasets>=2.18   accelerate   peft   liger-kernel
+# Install those separately only if you are reproducing the fine-tuning stages.

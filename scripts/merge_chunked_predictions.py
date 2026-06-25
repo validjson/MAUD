@@ -151,6 +151,11 @@ def merge_one_contract(preds: list[dict], multilabel: set[str]) -> tuple[dict, l
     by_field: dict[str, list] = defaultdict(list)
     for chunk_pred in preds:
         pred = chunk_pred["prediction"]
+        # A chunk whose JSON failed to parse (e.g. truncated at the token cap)
+        # has prediction=None.  It contributes nothing to the merge — treat it
+        # as a non-committing chunk rather than crashing.
+        if not isinstance(pred, dict):
+            continue
         for field, val in pred.items():
             if field == "contract_name":
                 continue
@@ -184,6 +189,12 @@ def main():
                          "for raw merge.  Auto-loaded from "
                          f"{DEFAULT_REMAP_PATH.relative_to(ROOT)} when --dir "
                          "is reports/e1_qwen32b*.")
+    ap.add_argument("--strip-evidence", action="store_true",
+                    help="Evidence conditions (E*e): drop all `*_evidence_spans` "
+                         "keys from each chunk prediction before merging, so the "
+                         "92 answer fields are scored exactly as the non-evidence "
+                         "baselines.  Auto-on when the predictions contain "
+                         "evidence fields.")
     args = ap.parse_args()
 
     # Auto-detect remap for E1 runs unless overridden
@@ -206,6 +217,22 @@ def main():
     preds = load_jsonl(preds_path)
     golds = load_jsonl(gold_path)
     multilabel = load_multilabel_fields()
+
+    # Evidence conditions (E*e): the predictions carry `*_evidence_spans` keys
+    # (the model's quoted justification).  Drop them before merging so the 92
+    # answer fields are merged/scored exactly as the non-evidence baselines.
+    has_evidence = any(
+        any(k.endswith("_evidence_spans") for k in (r.get("prediction") or {}))
+        for r in preds)
+    if args.strip_evidence or has_evidence:
+        n_dropped = 0
+        for r in preds:
+            p = r.get("prediction")
+            if isinstance(p, dict):
+                for k in [k for k in p if k.endswith("_evidence_spans")]:
+                    del p[k]; n_dropped += 1
+        print(f"Stripped {n_dropped} evidence-span field(s) before merge.")
+
     print(f"Loaded {len(preds)} chunk predictions, "
           f"{len(golds)} chunk-gold rows.")
     print(f"Multilabel fields: {sorted(multilabel)}")

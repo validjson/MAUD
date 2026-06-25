@@ -19,7 +19,7 @@ small JSON string-parity lexer makes sure whitespace *inside* a string value
 Usage:
     python scripts/decode_schemabpe.py \\
         --model Qwen/Qwen2.5-32B-Instruct \\
-        --schema data/training/chunked/schema_qwen.json \\
+        --schema data/training/chunked/schema.json \\
         --system-prompt-file data/training/chunked/system_prompt.txt \\
         --data data/training/chunked/e0partial_sample.jsonl \\
         --out-dir reports/e1_repro --device cuda --max-tokens 3072
